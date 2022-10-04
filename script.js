@@ -1,5 +1,4 @@
 /* Author: Juan Sebastian Peña Angarita */
-/* in process */
 
 /* using the library "typed.js" to give a write machine effect */
 var typed = new Typed('.typed', {
@@ -21,3 +20,5 @@ var typed = new Typed('.typed', {
 	cursorChar: '|',   // Caracter para el cursor
 	contentType: 'html',  // 'html' o 'null' para texto sin formato
 });
+
+
