@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Sebastian Peña Angarita</title>
+    <!-- logo for the title of the page -->
+    <link rel="icon" type="image/png" href="images/logoPage.png">
     <!-- including css-->
     <link rel="stylesheet" href="style.css">
     <!-- including icons -->
     <script src="https://kit.fontawesome.com/d50f8c8725.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="default">
     <!-- identifying the start of page -->
     <a name="title"></a>
     <!-- PRINCIPAL CONTAINER-->
@@ -26,11 +28,12 @@
                     <li><a href="#education"> Formación </a></li>
                     <li><a href="#skills"> Habilidades </a></li>
                     <li><a href="#social"> Redes </a></li>
+                    <button id="btnColor" class="cambiarColor_btn" onclick="cambiarFondo(cuerpo)">FONDO CLARO</button>
                 </ul>
             </div>
         </header>
         <!-- MAIN WITH THE PRINCIPAL CONTENT-->
-        <main class="content">
+        <main id="contenido" class="content">
 
             <!-- image of myself-->
             <img id = "myselfImg" src="images/20220921_211509.jpg" alt="image of myself">
@@ -39,7 +42,7 @@
             <section class="about">
                  <!-- identifying the about section -->
                 <a name="about"></a>
-                <h2>SOBRE MI</h2>
+                <h2 class="sub">SOBRE MI</h2>
                 <p>
                 Nacionalidad: Colombia <br><br>    
                 Residencia: Ciudad De México, México <br><br>
@@ -54,7 +57,7 @@
             <section class="education">
                 <!-- identifying the education section -->
                 <a name="education"></a>
-                <h2>FORMACIÓN</h2>
+                <h2 class="sub">FORMACIÓN</h2>
                 <ul>
                     <li>Preparatoria: Instituto Universitario León Felipe CDMX, Sistema Escolarizado.</li>
                     <li>Actualmente cursando la licenciatura de tecnologías y sistemas de información, UAM-Cuajimalpa</li>
@@ -65,7 +68,7 @@
             <section class="skills">
                 <!-- identifying the skills section -->
                 <a name="skills"></a>
-                <h2>HABILIDADES</h2>
+                <h2 class="sub">HABILIDADES</h2>
                 <ul>
                     <li>Python, C</li>
                     <li>HTML</li>
