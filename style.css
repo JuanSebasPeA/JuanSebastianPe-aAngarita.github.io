@@ -100,6 +100,7 @@ body {
     /* using css grid and grid areas for the structure*/
     grid-template-areas: "header header header"
                          "content content sidebar"
+	    		 "content content sidebar"
                          "footer footer footer";
     grid-gap: 20px;
     align-items: center;
