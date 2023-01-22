@@ -40,7 +40,9 @@ const cambiarFondo = (body) => {
 			contenidoBoton.innerHTML = oscuro;
 			body.style.color = "#000";
 			fondoSeccion(seccion);
+			document.getElementById('myselfImg').style.width = "65%";
 			document.getElementById('myselfImg').style.boxShadow = "8px 5px 15px #000";
+			document.getElementById('myselfImg').style.height = "90%";
 		}
 		else{
 			//console.log(false);
