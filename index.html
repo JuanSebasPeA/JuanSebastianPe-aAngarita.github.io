@@ -1,122 +1,246 @@
-<!-- Author: Juan Sebastian Peña Angarita -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Sebastian Peña Angarita</title>
-    <!-- logo for the title of the page -->
-    <link rel="icon" type="image/png" href="images/logoPage.png">
-    <!-- including css-->
-    <link rel="stylesheet" href="style.css">
-    <!-- including icons -->
-    <script src="https://kit.fontawesome.com/d50f8c8725.js" crossorigin="anonymous"></script>
-</head>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="./img/avatar.png" type="image/x-icon" />
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-qmbk06Qxo1qu9Wnfto3qV7zp4B6ZP4sWb4Q4uYiU1TkrTSMf6UgM6UjyxZmHjsZjKxxgWmydZwvGLz0ELheONg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Sebas Peña - Portfolio</title>
+  </head>
 
-<body class="default">
-    <!-- identifying the start of page -->
-    <a name="title"></a>
-    <!-- PRINCIPAL CONTAINER-->
-    <div class="container">
-        <!-- HEADER -->
-        <header class="header">
-            <h1 class="intro">Me: <span class="typed"></span></h1>
-            <div class="menu">
-                <ul>
-                    <li><a href="#about"> Acerca de mi </a></li>
-                    <li><a href="#education"> Formación </a></li>
-                    <li><a href="#skills"> Habilidades </a></li>
-                    <li><a href="#social"> Redes </a></li>
-                    <button id="btnColor" class="cambiarColor_btn" onclick="cambiarFondo(cuerpo)"><span>FONDO CLARO</span></button>
-                </ul>
+  <body>
+    <!-- Sección de inicio -->
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <nav id="nav" class="">
+              <ul id="links">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >HOME</a
+                  >
+                </li>
+                <li>
+                  <a href="#sobremi" onclick="seleccionar(this)">ABOUT ME</a>
+                </li>
+                <li>
+                  <a href="#portfolio" onclick="seleccionar(this)">PROJECTS</a>
+                </li>
+                <li>
+                  <a href="#contacto" onclick="seleccionar(this)">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
             </div>
+          </div>
         </header>
-        <!-- MAIN WITH THE PRINCIPAL CONTENT-->
-        <main id="contenido" class="content">
+        <div class="presentacion">
+          <p class="bienvenida">Ey there!</p>
+          <h2>I am <span>Sebastian Peña</span>, Developer</h2>
+          <p class="descripcion">Watch my projects</p>
+          <a href="#portfolio">PROJECTS</a>
+        </div>
+      </div>
+    </section>
 
-            <!-- image of myself-->
-            <img id = "myselfImg" src="images/20221220_184545.jpg" alt="image of myself">
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+      <div class="sobremi">
+        <p class="titulo-seccion">ABOUT ME</p>
+        <h2><span>Sebastian Peña</span></h2>
+        <h3>Student of Technologies and information systems</h3>
+        <p>
+          I am currently Technologies and information systems at the
+          metropolitan autonomous university, in Mexico city. I have carried out
+          projects with different technologies, both Front and Backend, as well
+          as the management of multipurpose languages. My Interests In The
+          Computer Field Are Frontend And Backend Development, As Well As
+          Databases And Software Development.
+        </p>
+        <a href="./resume.pdf" download="resume.pdf">Download CV</a>
+      </div>
+      <div class="contenedor-foto">
+        <img src="img/me2.jpg" alt="" />
+      </div>
+    </section>
 
-            <!-- section about me -->
-            <section class="about">
-                 <!-- identifying the about section -->
-                <a name="about"></a>
-                <h2 class="sub">SOBRE MI</h2>
-                <p>
-                Nacionalidad: Colombia <br><br>    
-                Residencia: Ciudad De México, México <br><br>
-                Edad: 21 <br><br>
-                Estudiante de la Universidad Autónoma Metropolitana, en la carrera de Tecnologías y Sistemas de información.<br><br>
-                Gran interés por la investigación y el desarrollo de las tecnologías y con gran capacidad de liderazgo y trabajo en equipo. <br><br>
-                Importante capacidad de aprendizaje tanto autodidácta como impartido, entendiendo las responsabilidades de un profesional de la tecnología.
-                </p>
-            </section>
+    <!-- skill section -->
+    <div class="contenedor-skills" id="skills">
+      <h3>SKILLS</h3>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Html & Css</p>
+          <span class="porcentaje">high</span>
+        </div>
 
-            <!-- section about my education -->
-            <section class="education">
-                <!-- identifying the education section -->
-                <a name="education"></a>
-                <h2 class="sub">FORMACIÓN</h2>
-                <ul>
-                    <li>Preparatoria: Instituto Universitario León Felipe CDMX, Sistema Escolarizado.</li>
-                    <li>Actualmente cursando la licenciatura de tecnologías y sistemas de información, UAM-Cuajimalpa</li>
-             </ul>
-            </section>
+        <div class="barra">
+          <div class="" id="html"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Javascript</p>
+          <span class="porcentaje">high</span>
+        </div>
 
-            <!-- section about my skills -->
-            <section class="skills">
-                <!-- identifying the skills section -->
-                <a name="skills"></a>
-                <h2 class="sub">HABILIDADES</h2>
-                <ul>
-                    <li>Python, C</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Js</li>
-                    <li>React</li>
-                    <li>Git - Github</li>
-                 </ul>
-            </section>
+        <div class="barra">
+          <div class="" id="js"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>React</p>
+          <span class="porcentaje">moderate-high</span>
+        </div>
 
-            <div id="homeIcon">
-                <a title="ir al Inicio" href="#title"><i class="fa-solid fa-house-user"></i></a>
-            </div>
-    
-        </main>
+        <div class="barra">
+          <div class="" id="rct"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Nodejs</p>
+          <span class="porcentaje">Moderate</span>
+        </div>
 
-        <!-- SIDEBAR WITH LINKS OF MY PROYECTS-->
-        <aside class="sidebar">
-            <!-- images about my proyects -->
-            <div class="sideImages">
-                <a title="abrir" href="https://proyecto-lista-gastos-d33c8.web.app/">
-                <img src="images/gastosApp.png">    
-                </a>
-                <a title="abrir" href="https://juansebaspea.github.io/tasksList.github.io/"><img src="images/taskList.png" alt="proyect"></a>
-                <a title="abrir" href="https://juansebaspea.github.io/aprendiendoHTML-CSS/"><img src="images/tutorial.png" alt="proyect"></a>
-                <a title="abrir" href="https://juansebaspea.github.io/fitnesSite.github.io/"><img src="images/fitSite.png" alt="proyect"></a>
-            </div>
-        </aside>
+        <div class="barra">
+          <div class="" id="nd"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>JAVA</p>
+          <span class="porcentaje">moderate-high</span>
+        </div>
 
-        <!-- FOOTER WITH SOCIAL MEDIAS AND MORE INFO -->
-        <footer class="footer">
-            <!-- identifying social medias section -->
-            <a name="social"></a>
-            <div class="icons">
-                <a title="enviar correo " href="mailto:sebasjuansebab@gmail.com"> <i class="fa-regular fa-envelope"> </i> </a>
-                <a title="ir reddit" href="https://www.reddit.com/user/sebitas2102"><i class="fa-brands fa-reddit"> </i> </a>
-                <a title="ir a facebook" href="https://www.facebook.com/juansebastian.penaangarita.7"><i class="fa-brands fa-facebook"> </i> </a>
-                <a title="ir a twitter" href="https://twitter.com/Sebasti69203103"> <i class="fa-brands fa-twitter"> </i> </a>
-                <a title="ir a github" href="https://github.com/codingSiteOne?tab=repositories"> <i class="fa-brands fa-github"> </i> </a>
-                <a title="ir a instagram" href="https://www.instagram.com/juan_seba06/"><i class="fa-brands fa-instagram"> </i> </a>
-            </div>
-        </footer>
+        <div class="barra">
+          <div class="" id="java"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Python</p>
+          <span class="porcentaje">moderate</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="py"></div>
+        </div>
+      </div>
     </div>
 
-    <!-- including the library "typed.js" -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <!-- including my file js-->
+    <!-- projects section -->
+    <section id="portfolio">
+      <h3 class="titulo-seccion">MY PROJECTS</h3>
+      <div class="fila">
+        <div title="open proyect" class="proyecto">
+          <a href="https://proyecto-lista-gastos-d33c8.web.app/">
+            <div class="overlay"></div>
+            <img src="img/gastosApp.png" alt="" />
+            <div class="info">
+              <h4>Expense list</h4>
+              <p>Web app</p>
+            </div>
+          </a>
+        </div>
+        <div title="open proyect" class="proyecto">
+          <a href="https://github.com/JuanSebasPeA/UamUniversityGame">
+            <div class="overlay"></div>
+            <img src="img/gameUam.png" alt="" />
+            <div class="info">
+              <h4>game 2d</h4>
+              <p>Game in python</p>
+            </div>
+          </a>
+        </div>
+        <div title="open proyect" class="proyecto">
+          <a href="https://juansebaspea.github.io/qrGenerator/">
+            <div class="overlay"></div>
+            <img src="img/qrGenerator.png" alt="" />
+            <div class="info">
+              <h4>QR Generator</h4>
+              <p>Web app</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="fila">
+        <div title="open proyect" class="proyecto">
+          <a href="https://github.com/JuanSebasPeA/numberRepresentation"> 
+              <div class="overlay"></div>
+              <img src="img/numberRepre.png" alt="" />
+              <div class="info">
+                <h4>number representation</h4>
+                <p>
+                  This program converts any number with a base from 2 to 34 in a
+                  decimal number
+                </p>
+              </div>
+          </a>
+        </div>
+        <div title="open proyect" class="proyecto">
+          <a href="https://juansebaspea.github.io/tasksList.github.io/"> 
+              <div class="overlay"></div>
+              <img src="img/taskList.png" alt="" />
+              <div class="info">
+                <h4>Task list</h4>
+                <p>Web app</p>
+              </div>
+          </a>
+        </div>
+
+        <div title="open proyect" class="proyecto">
+          <a href="https://juansebaspea.github.io/aprendiendoHTML-CSS/"> 
+              <div class="overlay"></div>
+              <img src="img/tutorial.png" alt="" />
+              <div class="info">
+                <h4>HTML and CSS tutorial</h4>
+                <p>web site</p>
+              </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+      <h3 class="titulo-seccion">Contact</h3>
+
+      <div class="icons">
+        <a href="https://github.com/JuanSebasPeA"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/juan_seba06/"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:sebasjuansebab@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+      <p>&copy Juan Sebastian Peña Angarita</p>
+    </footer>
+
     <script src="script.js"></script>
-    
-</body>
+  </body>
 </html>
