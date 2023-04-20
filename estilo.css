@@ -124,8 +124,9 @@ html {
   display: none;
   cursor: pointer;
 }
-
-/* section about me*/ 
+/* *********************/
+/* seccion S O B R E  M I */
+/* *********************/
 
 #sobremi {
   max-width: 1100px;
@@ -371,7 +372,7 @@ html {
   box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
 }
 
-/* CONTACT section */
+/* CONTACTO */
 
 #contacto {
   padding: 100px 15px;
@@ -393,13 +394,13 @@ html {
 }
 
 .icons {
-  display: flex; 
-  justify-content: center; 
+  display: flex; /* use flexbox to align the icons horizontally */
+  justify-content: center; /* center the icons horizontally */
 }
 
 .icons a {
-  margin: 0 10px; 
-  font-size: 24px; /
+  margin: 0 10px; /* add some spacing between the icons */
+  font-size: 24px; /* set the icon size */
   color: #000;
 }
 
@@ -465,7 +466,7 @@ footer a {
   #inicio .contenido .presentacion h2 {
     font-size: 40px;
   }
-  
+  /* seccion SOBRE MI */
   #sobremi {
     padding: 50px 0;
     display: block;
@@ -485,13 +486,21 @@ footer a {
     font-size: 25px;
     text-align: center;
   }
-  
- 
-  
+  /* seccion MIS SERVICIOS */
+  #servicios {
+    padding: 50px 15px;
+  }
+  #servicios .fila {
+    display: block;
+  }
+  #servicios .fila .servicio {
+    margin: 10px auto;
+  }
+  /* seccion HABLIDADES MI */
   .contenedor-skills {
     padding: 50px 20px;
   }
-  
+  /* seccion PORTFOLIO */
   #portfolio {
     padding: 50px 0;
   }
@@ -501,7 +510,7 @@ footer a {
   #portfolio .fila .proyecto {
     margin: 10px auto;
   }
-  
+  /* seccion CONTACTO */
   #contacto {
     padding: 50px 15px;
   }
