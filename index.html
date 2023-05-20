@@ -43,6 +43,9 @@
                   <a href="#sobremi" onclick="seleccionar(this)">ABOUT ME</a>
                 </li>
                 <li>
+                  <a href="#skills" onclick="seleccionar(this)">SKILLS</a>
+                </li>
+                <li>
                   <a href="#portfolio" onclick="seleccionar(this)">PROJECTS</a>
                 </li>
                 <li>
@@ -59,7 +62,7 @@
         </header>
         <div class="presentacion">
           <p class="bienvenida">Ey there!</p>
-          <h2>I am <span>Sebastian Peña</span>, Developer</h2>
+          <h2>I am <span>Sebastian Peña</span>, <span class="typed"></span></h2>
           <p class="descripcion">Watch my projects</p>
           <a href="#portfolio">PROJECTS</a>
         </div>
@@ -83,17 +86,17 @@
         <a href="./resume.pdf" download="resume.pdf">Download CV</a>
       </div>
       <div class="contenedor-foto">
-        <img src="img/me2.jpg" alt="" />
+        <img src="img/meSTDY4.jpg" alt="Profile image" />
       </div>
     </section>
 
     <!-- skill section -->
+    <a name="skills"></a>
     <div class="contenedor-skills" id="skills">
       <h3>SKILLS</h3>
       <div class="skill">
         <div class="info">
           <p><span class="lista"> </span>Html & Css</p>
-          <span class="porcentaje">high</span>
         </div>
 
         <div class="barra">
@@ -103,7 +106,6 @@
       <div class="skill">
         <div class="info">
           <p><span class="lista"> </span>Javascript</p>
-          <span class="porcentaje">high</span>
         </div>
 
         <div class="barra">
@@ -113,7 +115,6 @@
       <div class="skill">
         <div class="info">
           <p><span class="lista"> </span>React</p>
-          <span class="porcentaje">moderate-high</span>
         </div>
 
         <div class="barra">
@@ -123,7 +124,6 @@
       <div class="skill">
         <div class="info">
           <p><span class="lista"> </span>Nodejs</p>
-          <span class="porcentaje">Moderate</span>
         </div>
 
         <div class="barra">
@@ -133,7 +133,6 @@
       <div class="skill">
         <div class="info">
           <p><span class="lista"> </span>JAVA</p>
-          <span class="porcentaje">moderate-high</span>
         </div>
 
         <div class="barra">
@@ -143,7 +142,6 @@
       <div class="skill">
         <div class="info">
           <p><span class="lista"> </span>Python</p>
-          <span class="porcentaje">moderate</span>
         </div>
 
         <div class="barra">
@@ -189,37 +187,37 @@
       </div>
       <div class="fila">
         <div title="open proyect" class="proyecto">
-          <a href="https://github.com/JuanSebasPeA/numberRepresentation"> 
-              <div class="overlay"></div>
-              <img src="img/numberRepre.png" alt="" />
-              <div class="info">
-                <h4>number representation</h4>
-                <p>
-                  This program converts any number with a base from 2 to 34 in a
-                  decimal number
-                </p>
-              </div>
+          <a href="https://github.com/JuanSebasPeA/numberRepresentation">
+            <div class="overlay"></div>
+            <img src="img/numberRepre.png" alt="" />
+            <div class="info">
+              <h4>number representation</h4>
+              <p>
+                This program converts any number with a base from 2 to 34 in a
+                decimal number
+              </p>
+            </div>
           </a>
         </div>
         <div title="open proyect" class="proyecto">
-          <a href="https://juansebaspea.github.io/tasksList.github.io/"> 
-              <div class="overlay"></div>
-              <img src="img/taskList.png" alt="" />
-              <div class="info">
-                <h4>Task list</h4>
-                <p>Web app</p>
-              </div>
+          <a href="https://juansebaspea.github.io/tasksList.github.io/">
+            <div class="overlay"></div>
+            <img src="img/taskList.png" alt="" />
+            <div class="info">
+              <h4>Task list</h4>
+              <p>Web app</p>
+            </div>
           </a>
         </div>
 
         <div title="open proyect" class="proyecto">
-          <a href="https://juansebaspea.github.io/aprendiendoHTML-CSS/"> 
-              <div class="overlay"></div>
-              <img src="img/tutorial.png" alt="" />
-              <div class="info">
-                <h4>HTML and CSS tutorial</h4>
-                <p>web site</p>
-              </div>
+          <a href="https://juansebaspea.github.io/aprendiendoHTML-CSS/">
+            <div class="overlay"></div>
+            <img src="img/tutorial.png" alt="" />
+            <div class="info">
+              <h4>HTML and CSS tutorial</h4>
+              <p>web site</p>
+            </div>
           </a>
         </div>
       </div>
@@ -230,9 +228,15 @@
       <h3 class="titulo-seccion">Contact</h3>
 
       <div class="icons">
-        <a href="https://github.com/JuanSebasPeA"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/juan_seba06/"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:sebasjuansebab@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/JuanSebasPeA"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/juan_seba06/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="mailto:sebasjuansebab@gmail.com"
+          ><i class="fas fa-envelope"></i
+        ></a>
       </div>
     </section>
 
@@ -241,6 +245,8 @@
       <p>&copy Juan Sebastian Peña Angarita</p>
     </footer>
 
+    <!-- linking js files -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="script.js"></script>
   </body>
 </html>
